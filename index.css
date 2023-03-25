@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bai Jamjuree;
+}
+
+:root {
+    --heading-color: hsl(208, 8%, 34%);
+    --paragraph-color: hsl(204, 3%, 69%);
+    --button-back-one: hsl(171, 66%, 44%);
+    --button-back-two: hsl(233, 100%, 69%);
+    --button-text: hsl(193, 100%, 98%);
+    --button-back-one-hover: hsl(171, 52%, 58%);
+    --button-back-two-hover: hsl(233, 100%, 77%);
+    --button-border-one: hsl(170, 40%, 53%);
+    --button-border-two: hsl(234, 67%, 69%);
+    --footer-bg-color: hsl(220, 18%, 97%);
+    --footer-hover-color: hsl(171, 64%, 45%);
+    --footer-link-color: hsl(225, 2%, 51%);
+}
+
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--footer-link-color);
+}
+
+a:hover {
+    color: var(--footer-hover-color);
+}
+
+.header {
+    padding: 5%;
+    padding-top: 15%;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.buttons .ios {
+    width: 25%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--button-back-one);
+    color: var(--button-text);
+    padding: 2%;
+    border: none;
+    border-radius: 40px;
+    border-bottom: 5px solid var(--button-border-one);
+}
+
+.buttons .ios:hover {
+    background-color: var(--button-back-one-hover);
+}
+
+.buttons .mac:hover {
+    background-color: var(--button-back-two-hover);
+}
+
+.buttons .mac {
+    width: 25%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--button-back-two);
+    color: var(--button-text);
+    padding: 2%;
+    border: none;
+    border-radius: 40px;
+    border-bottom: 5px solid var(--button-border-two);
+}
+
+.section1 {
+    padding: 5%;
+    margin-top: -12%;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section2 {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 .computer {
+    width: 50%;
+    background-image: url(./images/image-computer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+}
+
+.section2 .content1 {
+    width: 50%;
+    padding: 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.section2 .content1 p:not(:last-child) {
+    margin-bottom: 10%;
+}
+
+.section3 {
+    text-align: center;
+    margin-top: 6%;
+}
+
+.section4 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 .main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.section4 .main .item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .main .item h3 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.companies img {
+    width: 100px;
+    height: auto;
+}
+
+.foot {
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    margin-top: -12%;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.footer .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/logo.svg);
+    background-size: cover;
+}
+
+.footer .links {
+    width: 8.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .links .link:hover svg {
+    color: var(--footer-hover-color);
+    cursor: pointer;
+}
+
+.footer .contents-footer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
